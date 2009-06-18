@@ -141,7 +141,10 @@ Key bindings:
   (easy-menu-add arduino-menu)
   (run-hooks 'c-mode-common-hook)
   (run-hooks 'arduino-mode-hook)
+  (defun Push-Arduino ()
+    (interactive)
+    (compile "make; make upload;"))
+  (local-set-key [M-up] `Push-Arduino)
   (c-update-modeline))
-
 (provide 'arduino-mode)
 ;;; arduino-mode.el ends here

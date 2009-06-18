@@ -14,8 +14,11 @@
                              "~/Documents/org/home.org"
                              "~/Documents/org/recognition.org"))
 
+(setq compilation-scroll-output 1)
 ;;(add-hook 'org-mode-hook )
 (setq rcirc-default-nick "coderdad")
 
 (setq rcirc-authinfo
       '(("freenode" nickserv "coderdad" "password")))
+
+(require 'arduino-mode)
