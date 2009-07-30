@@ -5,6 +5,8 @@
 ;;(add-to-list 'load-path "~/.emacs.d/emacs-jabber")
 ;;(require 'jabber-autoloads)
 
+(require 'applescript-mode)
+
 
 (require 'org-install)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
