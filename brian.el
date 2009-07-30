@@ -12,6 +12,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-log-done t)
+(setq org-enforce-todo-dependencies t)
 (add-hook 'org-mode-hook 'turn-on-font-lock)
 
 (setq org-agenda-files (list "~/Documents/org/work.org"
